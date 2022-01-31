@@ -7,8 +7,6 @@
         <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script><div id="page-wrapper">
 <style>
 
-
-
 #page-wrapper{
   background-color: black;
   position: relative;
@@ -47,7 +45,7 @@ body{
   background-color: black;
 }
 nav {
-  font-weight: 700;
+  font-weight: 400;
    background-color: black;
 }
 
@@ -119,7 +117,7 @@ nav > ul {
  max-width: 275px;
   width: 100%;
   padding: 5px;
-  background-color: white;
+  background-color: black;
   border: red solid;
 }
 
@@ -156,6 +154,20 @@ div {
 color: black;
 }
 
+#portofolio .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  #portofolio .img {
+    display: none;
+  }
+}
 
 #portofolio .desc {
   display: flex;
@@ -181,20 +193,14 @@ color: black;
   }
 }
 
-#contact {
-        width: 100%;
-  position: relative;
-        font-family: 'Montserrat', sans-serif;
-  margin-top: 20px;
+#freelancepricing {
+font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ;
   justify-content: center;
-color: red;
 }
-
  #survey-form {
-         margin-top: 20px;
   max-width: 750px;
   width: 100%;
   padding: 10px;
@@ -219,34 +225,22 @@ color: red;
   border-radius: 2px;
   cursor: pointer;
 }
-@media (max-width: 750px) {
-  #contact {
-          display: flex;
-    width: 100%;
-    text-align: center;
+@media (max-width: 1000px) {
+  #freelancepricing {
+          width: 100%
+text-align: center;
     padding: 0;
     height: 150px;
-          flex-wrap: wrap;  
-  }
-}
-        #contact .desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 125px;
-  width: 80vw;
-  padding: 5px;
-}        
-     
-}
-#about {
+        }
+        
+        #contact {
 font-family: 'Montserrat', sans-serif;
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-        </style>
+</style>
 
 <div id="page-wrapper">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -262,8 +256,8 @@ font-family: 'Montserrat', sans-serif;
     <nav id="nav-bar">
       <ul>
         <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
-        <li><a class="nav-link" href="contact">Contact</a></li>
-               <li><a class="nav-link" href="#about">About</a></li>              
+        <li><a class="nav-link" href="#freelancepricing">Freelance Pricing</a></li>
+        <li><a class="nav-link" href="#portofolio">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -292,10 +286,10 @@ font-family: 'Montserrat', sans-serif;
     </div>
   </section>
     
-<section id="contact">
-  <h2 style="text-align:center;">Contact</h2> 
+<section id="freelancepricing">
+  <h2>Freelance Pricing</h2>
+  <p style="text-align:center;">Send me your design request below and I will try to contact you ASAP.</p>
   <form id="survey-form">
-          
           <textarea
         id="text"
         class="input-textarea"
@@ -306,12 +300,11 @@ font-family: 'Montserrat', sans-serif;
           </form>
 </section>
   
-  </section>
-        <section id="about">
-  <h2>About</h2>
+  <section id="contact">
+  <h2>Contact</h2>
 
-  </section>  
-        <script type="text/babel" src="index.js"></script>
+  </section>
+  <script type="text/babel" src="index.js"></script>
         <script>
             $('.menu-item').hover(function () {
                 $(this).siblings('li').css('text-decoration', 'line-through');
