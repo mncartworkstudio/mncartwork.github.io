@@ -192,46 +192,6 @@ color: black;
     margin-top: 0;
   }
 }
-
-#freelancepricing {
-font-family: 'Montserrat', sans-serif;
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
- #survey-form {
-  max-width: 750px;
-  width: 100%;
-  padding: 10px;
-  background-color: black;
-  border: red solid;
-}
-.input-textarea {
-  font-family: 'Montserrat', sans-serif;
-  min-height: 120px;
-  width: 100%;
-  padding: 0.0625rem;
-  resize: vertical;
-}
-
-.submit-btn {
-  font-family: 'Montserrat', sans-serif;
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background: ;
-  color: inherit;
-  border-radius: 2px;
-  cursor: pointer;
-}
-@media (max-width: 1000px) {
-  #freelancepricing {
-          width: 100%
-text-align: center;
-    padding: 0;
-    height: 150px;
-        }
         
         #contact {
 font-family: 'Montserrat', sans-serif;
@@ -240,7 +200,14 @@ font-family: 'Montserrat', sans-serif;
   flex-wrap: wrap;
   justify-content: center;
 }
-</style>
+         #about {
+font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+        </style>
 
 <div id="page-wrapper">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -256,8 +223,8 @@ font-family: 'Montserrat', sans-serif;
     <nav id="nav-bar">
       <ul>
         <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
-        <li><a class="nav-link" href="#freelancepricing">Freelance Pricing</a></li>
-        <li><a class="nav-link" href="#portofolio">Contact</a></li>
+     <li><a class="nav-link" href="#contact">Contact</a></li>
+ <li><a class="nav-link" href="#about">About</a></li>
       </ul>
     </nav>
   </header>
@@ -286,25 +253,15 @@ font-family: 'Montserrat', sans-serif;
     </div>
   </section>
     
-<section id="freelancepricing">
-  <h2>Freelance Pricing</h2>
-  <p style="text-align:center;">Send me your design request below and I will try to contact you ASAP.</p>
-  <form id="survey-form">
-          <textarea
-        id="text"
-        class="input-textarea"
-        name="message"
-        placeholder="Write here..."
-      ></textarea>
-      <input id="submit" type="submit" value="Send" class="btn" />
-          </form>
-</section>
-  
   <section id="contact">
   <h2>Contact</h2>
 
   </section>
-  <script type="text/babel" src="index.js"></script>
+        <section id="about">
+  <h2>About</h2>
+
+  </section>  
+        <script type="text/babel" src="index.js"></script>
         <script>
             $('.menu-item').hover(function () {
                 $(this).siblings('li').css('text-decoration', 'line-through');
