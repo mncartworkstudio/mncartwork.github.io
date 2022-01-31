@@ -1,0 +1,309 @@
+<html>
+<head>
+        <title>MNC ARTWORK</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script><div id="page-wrapper">
+<style>
+
+#page-wrapper{
+  background-color: black;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#header-img{
+  width: 200px;
+ margin-left: 0px;
+}
+
+header {
+   font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 0;
+  min-height: 100px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+#title{
+  color: red;
+  background-color: black;
+}
+body{
+  background-color: black;
+}
+nav {
+  font-weight: 400;
+   background-color: black;
+}
+
+@media (max-width: 350px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@media (max-width: 350px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+.nav-link{
+  margin-left:20px;
+  font-size: 15px;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: red;
+  cursor: pointer;
+}
+.grid {
+   font-family: 'Montserrat', sans-serif;
+  font: 
+  display: flex;
+  flex-wrap: wrap;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  margin-top: 190px;
+}
+
+#hero input[type='email'] {
+  font-family: 'Montserrat', sans-serif;
+ max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+  border: red solid;
+}
+
+#hero input[type='submit'] {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: ;
+  border: 3px black solid;
+}
+
+#hero input[type='submit']:hover {
+  background-color: green;
+  transition: background-color 1s;
+}
+
+@media (max-width: 350px) {
+  #hero {
+    margin-top: 100px;
+  }
+}
+div {
+ color: red;
+}
+#portofolio {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: ;
+  justify-content: center;
+color: black;
+}
+
+#portofolio .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  #portofolio .img {
+    display: none;
+  }
+}
+
+#portofolio .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #portofolio .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #portofolio {
+    margin-top: 0;
+  }
+}
+
+#freelancepricing {
+font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ #survey-form {
+  max-width: 750px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  border: red solid;
+}
+.input-textarea {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 120px;
+  width: 100%;
+  padding: 0.0625rem;
+  resize: vertical;
+}
+
+.submit-btn {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: ;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#contact {
+font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+</style>
+
+<div id="page-wrapper">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+ <header id="header">
+    <div class="logo"        
+<a href="https://imgbb.com/"><img
+        id="header-img"src="https://i.ibb.co/wr7dWfw/32fce9d6-d6e3-48b2-bab1-7a29b0f658ed-2.jpg" alt="mnc-artwork logo" border="0"></a>
+              </div>   
+    <h1 id="title">MNC ARTWORK</h1> 
+<br>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
+        <li><a class="nav-link" href="#freelancepricing">Freelance Pricing</a></li>
+        <li><a class="nav-link" href="#portofolio">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
+<body>
+  
+    <section id="hero">
+            <form id="form"   action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Connect" class="btn" />
+    </form>
+    </section>
+    
+     <div class="container">
+    <section id="portofolio">
+      <div class="grid">
+           <h2 style="text-align:center;">Portofolio</h2>
+            
+        </div>
+    </div>
+  </section>
+    
+<section id="freelancepricing">
+  <h2>Freelance Pricing</h2>
+  <p style="text-align:center;">Contact me at mnc.artworkstudio@gmail.com for offers, products and pricing or send me your design request below and I will try to contact you ASAP.</p>
+  <form id="survey-form">
+          <textarea
+        id="text"
+        class="input-textarea"
+        name="message"
+        placeholder="Write here..."
+      ></textarea>
+      <input id="submit" type="submit" value="Send" class="btn" />
+          </form>
+</section>
+  
+  <section id="contact">
+  <h2>Contact</h2>
+
+  </section>
+  <script type="text/babel" src="index.js"></script>
+        <script>
+            $('.menu-item').hover(function () {
+                $(this).siblings('li').css('text-decoration', 'line-through');
+            }, function () {
+                $(this).siblings('li').css('text-decoration', 'none');
+            });
+        </script>
+        </body>
