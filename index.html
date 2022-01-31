@@ -156,20 +156,6 @@ div {
 color: black;
 }
 
-#portofolio .img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 125px;
-  width: 20vw;
-  color: black;
-}
-
-@media (max-width: 550px) {
-  #portofolio .img {
-    display: none;
-  }
-}
 
 #portofolio .desc {
   display: flex;
@@ -228,8 +214,16 @@ font-family: 'Montserrat', sans-serif;
   border-radius: 2px;
   cursor: pointer;
 }
-
-#contact {
+@media (max-width: 550px) {
+  #freelancepricing .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+          flex-wrap: wrap;
+          flex-direction: row;
+  }
+}#contact {
 font-family: 'Montserrat', sans-serif;
   margin-top: 60px;
   display: flex;
