@@ -200,16 +200,7 @@ font-family: 'Montserrat', sans-serif;
   flex-wrap: wrap;
   justify-content: center;
 }
-@media (max-width: 1000px) {
-  #freelancepricing {
-    margin-top: ;
-  flex-direction: column;
-          width: 100%
-text-align: center;
-    padding: 0;
-    height: 150px;
-        }
-} #survey-form {
+ #survey-form {
   max-width: 750px;
   width: 100%;
   padding: 10px;
@@ -234,8 +225,14 @@ text-align: center;
   border-radius: 2px;
   cursor: pointer;
 }
-
-#contact {
+@media (max-width: 1000px) {
+  #freelancepricing {
+          width: 100%
+text-align: center;
+    padding: 0;
+    height: 150px;
+        }
+        #contact {
 font-family: 'Montserrat', sans-serif;
   margin-top: 60px;
   display: flex;
@@ -290,7 +287,7 @@ font-family: 'Montserrat', sans-serif;
     
 <section id="freelancepricing">
   <h2>Freelance Pricing</h2>
-  <p style="text-align:center;">Contact me at mnc.artworkstudio@gmail.com for offers, products and pricing or send me your design request below and I will try to contact you ASAP.</p>
+  <p style="text-align:center;">Send me your design request below and I will try to contact you ASAP.</p>
   <form id="survey-form">
           <textarea
         id="text"
